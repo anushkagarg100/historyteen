@@ -1,17 +1,29 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Paper-and-ink palette. Academic minimal: near-monochrome, one accent. */
+  --background: #fbfaf7;
+  --foreground: #14130f;
+  --muted: #6b6862;
+  --rule: #e0ddd4;
+  --accent: #7a2e2e;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #111110;
+    --foreground: #edeae3;
+    --muted: #99958c;
+    --rule: #2b2a26;
+    --accent: #c98b8b;
+  }
+
+  html {
+    color-scheme: dark;
   }
 }
 
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -26,7 +38,8 @@ body {
   flex-direction: column;
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans-ui), system-ui, -apple-system, "Segoe UI",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -42,8 +55,24 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
+::selection {
+  background: var(--accent);
+  color: var(--background);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
   html {
-    color-scheme: dark;
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
   }
 }
