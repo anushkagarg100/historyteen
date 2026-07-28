@@ -1,12 +1,6 @@
 import styles from "./page.module.css";
+import SiteHeader from "./site-header";
 import SubscribeForm from "./subscribe-form";
-
-const NAV = [
-  { label: "First issue", href: "#issue", wideOnly: true },
-  { label: "Syllabus", href: "#syllabus" },
-  { label: "About", href: "#about" },
-  { label: "Subscribe", href: "#subscribe" },
-];
 
 const LEAD = {
   kicker: "Soweto · 1976",
@@ -104,25 +98,7 @@ export default function Home() {
         Skip to content
       </a>
 
-      <header className={styles.masthead}>
-        <div className={`${styles.container} ${styles.mastheadInner}`}>
-          <a className={styles.wordmark} href="#main">
-            History<span>Teen</span>
-          </a>
-          <nav className={styles.nav} aria-label="Primary">
-            <ul>
-              {NAV.map((item) => (
-                <li
-                  key={item.href}
-                  className={item.wideOnly ? styles.navWide : undefined}
-                >
-                  <a href={item.href}>{item.label}</a>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="main">
         {/* Hero */}
