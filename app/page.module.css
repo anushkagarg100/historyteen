@@ -315,6 +315,103 @@
   margin-top: 20px;
 }
 
+.missionHeading {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 32px 48px;
+  align-items: start;
+}
+
+.missionStatement {
+  max-width: 28ch;
+  font-family: var(--font-serif-display), Georgia, serif;
+  font-size: clamp(28px, 3.6vw, 44px);
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
+}
+
+.missionStory {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 32px 48px;
+  margin-top: 64px;
+  padding-top: 40px;
+  border-top: 1px solid var(--rule);
+}
+
+.missionIntro {
+  max-width: 28ch;
+  font-family: var(--font-serif-display), Georgia, serif;
+  font-size: 21px;
+  line-height: 1.45;
+  letter-spacing: -0.015em;
+}
+
+.missionProse {
+  max-width: 62ch;
+}
+
+.missionProse p {
+  font-size: 17px;
+  line-height: 1.78;
+  color: var(--muted);
+}
+
+.missionProse p + p {
+  margin-top: 22px;
+}
+
+.myths {
+  margin-top: 64px;
+  padding: 48px;
+  border: 1px solid var(--rule);
+}
+
+.myths h3 {
+  margin-top: 14px;
+  max-width: 18ch;
+  font-family: var(--font-serif-display), Georgia, serif;
+  font-size: clamp(26px, 3vw, 36px);
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: -0.025em;
+}
+
+.mythList {
+  margin-top: 36px;
+  list-style: none;
+  border-top: 1px solid var(--rule);
+}
+
+.mythList li {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 20px;
+  align-items: baseline;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.mythList li p {
+  font-family: var(--font-serif-display), Georgia, serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  line-height: 1.3;
+  letter-spacing: -0.02em;
+}
+
+.missionSignoff {
+  font-family: var(--font-serif-display), Georgia, serif;
+  font-size: 22px !important;
+  color: var(--foreground) !important;
+}
+
+.editorialApproach {
+  margin-top: 72px;
+  padding-top: 48px;
+  border-top: 1px solid var(--rule);
+}
+
 .principles {
   margin-top: 56px;
   padding-top: 40px;
@@ -497,7 +594,9 @@
 
 @media (max-width: 860px) {
   .lead,
-  .split {
+  .split,
+  .missionHeading,
+  .missionStory {
     grid-template-columns: 1fr;
   }
 
@@ -530,6 +629,11 @@
   .competitionSection {
     grid-template-columns: 1fr;
     gap: 28px;
+  }
+
+  .missionStatement,
+  .missionIntro {
+    max-width: 36ch;
   }
 }
 
@@ -575,6 +679,20 @@
   .competitionFacts li {
     grid-template-columns: 1fr;
     gap: 3px;
+  }
+
+  .missionStory,
+  .myths {
+    margin-top: 48px;
+  }
+
+  .myths {
+    padding: 32px 24px;
+  }
+
+  .mythList li {
+    grid-template-columns: 2rem 1fr;
+    gap: 12px;
   }
 
   .footerInner {
