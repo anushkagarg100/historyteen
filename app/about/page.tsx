@@ -17,6 +17,9 @@ export default function AboutPage() {
           <p className={styles.eyebrow}>About me</p>
           <h1>The person behind HistoryTeen.</h1>
           <p className={styles.destinationIntro}>
+            I am an incoming freshman in high school
+          </p>
+          <p className={styles.destinationIntro}>
             This page will introduce the student building HistoryTeen, the
             questions that sparked the project, and the mission behind it.
           </p>
