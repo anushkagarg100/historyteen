@@ -547,6 +547,44 @@
   color: var(--muted);
 }
 
+.competitionDetails > p + p {
+  margin-top: 20px;
+}
+
+.competitionQuestion {
+  margin: 28px 0;
+  padding: 24px 28px;
+  border-left: 2px solid var(--accent);
+  background: color-mix(in srgb, var(--rule) 28%, transparent);
+  font-family: var(--font-serif-display), Georgia, serif;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.competitionResources {
+  margin-top: 36px;
+  padding-top: 28px;
+  border-top: 1px solid var(--rule);
+}
+
+.competitionResources ul {
+  margin-top: 16px;
+  list-style: none;
+}
+
+.competitionResources li + li {
+  margin-top: 12px;
+}
+
+.placeholderLink {
+  display: inline-block;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--rule);
+  color: var(--muted);
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .competitionFacts {
   margin-top: 28px;
   list-style: none;

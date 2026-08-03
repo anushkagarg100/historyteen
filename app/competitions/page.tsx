@@ -18,7 +18,7 @@ export default function CompetitionsPage() {
           <h1>Put your historical thinking to the test.</h1>
           <p className={styles.destinationIntro}>
             From fast-paced quiz tournaments to months-long original research,
-            these are two of the best places to begin competing in history.
+            these are some of the best places to compete in history.
           </p>
 
           <div className={styles.competitionList}>
@@ -30,25 +30,103 @@ export default function CompetitionsPage() {
               </div>
               <div className={styles.competitionDetails}>
                 <p>
-                  IAC organizes academic quiz tournaments for primary and
-                  secondary students. Its history events include the
-                  individual International History Bee and the team-based
-                  International History Bowl.
+                  Do you hoard National Geographic books in your room? Is your
+                  favorite site Wikipedia? Does a trip to the museum send happy
+                  tingles up your spine? If you responded yes to any of these
+                  questions, you have come to the right location.
                 </p>
+                <p>
+                  International Academic Competitions is a non-profit
+                  organization that organizes quiz competitions for kids of all
+                  ages. They have science and math competitions, but it&rsquo;s
+                  the history and geography ones that are particularly
+                  exceptional.
+                </p>
+                <p>
+                  For history, the big competition is the History Bee, which
+                  quizzes you over general world history. However, there are
+                  multiple smaller events you can take part in, such as the US
+                  History Bee, the Citizenship Bee (mainly about US history and
+                  American citizenship), and the Humanities Bee (about the
+                  history of literature and the arts). You can also take written
+                  exams.
+                </p>
+                <p>
+                  The bees involve a moderator and about 6 to 8 players in a
+                  room. A moderator reads a paragraph-style question like the
+                  one below:
+                </p>
+
+                <blockquote className={styles.competitionQuestion}>
+                  In 1755, this man fought off troops at the Battle of
+                  Monogahela while suffering from dysentery. During his
+                  presidency, this man quelled the Whiskey Rebellion and was
+                  known for his farewell address that warned against the
+                  formation of political parties. He &ldquo;crossed the
+                  Delaware&rdquo; in the American Revolution, resulting in a
+                  victory at the Battle of Trenton. For the point, who is this
+                  first president of the United States?
+                </blockquote>
+
+                <p>
+                  Players ring in with their buzzers when they have an answer.
+                  It&rsquo;s a lot of fun—think of this like Jeopardy but for
+                  kids.
+                </p>
+                <p>
+                  You have to pass a regional contest. IAC is located across the
+                  US and in many different countries, so there will likely be an
+                  event in your area. You then proceed to the national contest
+                  in Orlando, Florida or Arlington, Virginia, depending on your
+                  age group.
+                </p>
+                <p>
+                  The level of competition is quite high at these events,
+                  particularly if you are an older student. However, if you love
+                  learning, it is also extremely rewarding. IAC is essentially a
+                  sport—a mental sport.
+                </p>
+
+                <div className={styles.competitionResources} id="iac-resources">
+                  <p className={styles.kicker}>
+                    If you are interested in IAC, check out these links below
+                  </p>
+                  <ul>
+                    <li>
+                      <a
+                        className={styles.placeholderLink}
+                        href="#"
+                        aria-disabled="true"
+                        tabIndex={-1}
+                      >
+                        My IAC Experience
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        className={styles.placeholderLink}
+                        href="#"
+                        aria-disabled="true"
+                        tabIndex={-1}
+                      >
+                        The Complete IAC Strategy Guide
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
                 <ul className={styles.competitionFacts}>
                   <li>
-                    <strong>Best for</strong>
-                    Students who enjoy quick recall, broad knowledge, and
-                    buzzer-based competition.
-                  </li>
-                  <li>
-                    <strong>Formats</strong>
-                    Compete individually in the Bee or with a team in the Bowl.
+                    <strong>Format</strong>
+                    Fast-paced, buzzer-based quiz competition.
                   </li>
                   <li>
                     <strong>Pathway</strong>
-                    Regional events can lead to national and international
-                    championships.
+                    Advance from a regional contest to the national level.
+                  </li>
+                  <li>
+                    <strong>Answer</strong>
+                    George Washington.
                   </li>
                 </ul>
                 <a
