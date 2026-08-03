@@ -17,9 +17,35 @@ export default function BlogPage() {
           <p className={styles.eyebrow}>The blog</p>
           <h1>History is an argument worth joining.</h1>
           <p className={styles.destinationIntro}>
-            Essays, unusual stories, primary sources, and fresh ways into the
-            past will live here. The first posts are in preparation.
+            In my opinion, the best parts of history lie in stumbling on new,
+            different stories, often from unexpected sources. If you don&rsquo;t
+            know anything about the subject and want to learn something new,
+            this is a great place to start.
           </p>
+
+          <section className={styles.blogList} aria-label="Blog posts">
+            <article className={styles.blogPost}>
+              <p className={styles.kicker}>Featured post &middot; Substack</p>
+              <h2>
+                <a
+                  href="https://anushkagargwrites.substack.com/p/introducing-the-bone-wars"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Introducing... the Bone Wars!
+                </a>
+              </h2>
+              <a
+                className={styles.competitionLink}
+                href="https://anushkagargwrites.substack.com/p/introducing-the-bone-wars"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Read on Substack &nearr;
+              </a>
+            </article>
+          </section>
+
           <Link className={styles.backLink} href="/">
             Back to the homepage
           </Link>
