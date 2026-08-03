@@ -4,10 +4,7 @@ import styles from "./page.module.css";
 const NAV = [
   { label: "Competitions", href: "/competitions" },
   { label: "Blog", href: "/blog" },
-  { label: "About Me", href: "/about" },
-  { label: "First issue", href: "/#issue", secondary: true },
-  { label: "Syllabus", href: "/#syllabus", secondary: true },
-  { label: "Subscribe", href: "/#subscribe", secondary: true },
+  { label: "Our Mission", href: "/about" },
 ];
 
 export default function SiteHeader() {
@@ -20,10 +17,7 @@ export default function SiteHeader() {
         <nav className={styles.nav} aria-label="Primary">
           <ul>
             {NAV.map((item) => (
-              <li
-                key={item.href}
-                className={item.secondary ? styles.navSecondary : undefined}
-              >
+              <li key={item.href}>
                 <Link href={item.href}>{item.label}</Link>
               </li>
             ))}
