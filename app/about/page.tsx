@@ -75,28 +75,31 @@ export default function AboutPage() {
             <p className={styles.missionIntro}>The truth about history</p>
             <div className={styles.missionProse}>
               <p>
-                History is an incredibly versatile field, with new discoveries
-                being made all the time. Contrary to the first myth, history is
-                not irrelevant or boring. In fact, the more you study history,
-                the more you gain a new way of seeing the world. There are many
-                different books you can check out on our website to learn more
-                about history, as well as quizzes and articles.
+                The truth is, history is an incredibly versatile field, with new
+                discoveries being made all the time; and contrary to the first
+                myth, it is not irrelevant or boring. In fact, the more you
+                study it, the more you gain a new way of seeing the world.
+                Don&rsquo;t believe me? There are many different books you can
+                look at on our website to learn more about history, as well as
+                quizzes and articles.
               </p>
               <p>
-                On to the second myth: there are plenty of things you can do
-                with history. In our Competitions list, we have contests and
-                programs you can take part in to stoke your passion. Not only
-                that, but we feature interviews with many different history
-                professionals who have gone on to make careers out of their
-                budding interest.
+                Onto the second myth--there are plenty of things you can do with
+                history. In our &ldquo;Competitions&rdquo; list, we have a list
+                of contests and programs you can take part in to stoke your
+                passion. Not only that, but we feature interviews with many
+                different history professionals, who have gone on to make
+                careers out of their budding interest.
               </p>
               <p>
-                My main objective is to support you wherever you are on your
-                history journey and create the space I wish I had when I was
-                just starting out. Hopefully, entering this website will spark
-                a long and fruitful history journey for you as well.
+                My main objective is to support you wherever you are and create
+                the space I wish I had when I was just starting out.
               </p>
-              <p className={styles.missionSignoff}>Happy learning!</p>
+              <p>
+                To paraphrase Laozi, &ldquo;A history journey of a thousand miles
+                begins with History Teen.&rdquo;
+              </p>
+              <p className={styles.missionSignoff}>Happy learning!!</p>
             </div>
           </div>
 
