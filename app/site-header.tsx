@@ -5,6 +5,11 @@ const NAV = [
   { label: "Competitions", href: "/competitions" },
   { label: "Blog", href: "/blog" },
   { label: "Our Mission", href: "/about" },
+  { label: "Interviews", href: "/interviews" },
+  { label: "Book Recommendations", href: "/book-recommendations" },
+  { label: "Skits and Parodies", href: "/skits-and-parodies" },
+  { label: "Comics", href: "/comics" },
+  { label: "Quiz", href: "/quiz" },
 ];
 
 export default function SiteHeader() {
