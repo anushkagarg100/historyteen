@@ -44,6 +44,27 @@ export default function BlogPage() {
                 Read on Substack &nearr;
               </a>
             </article>
+
+            <article className={styles.blogPost}>
+              <p className={styles.kicker}>Post &middot; Substack</p>
+              <h2>
+                <a
+                  href="https://anushkagargwrites.substack.com/p/to-americas-250th"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  To America&rsquo;s 250th
+                </a>
+              </h2>
+              <a
+                className={styles.competitionLink}
+                href="https://anushkagargwrites.substack.com/p/to-americas-250th"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Read on Substack &nearr;
+              </a>
+            </article>
           </section>
 
           <Link className={styles.backLink} href="/">
