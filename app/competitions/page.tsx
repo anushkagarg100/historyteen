@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import styles from "../page.module.css";
 import SiteHeader from "../site-header";
 
@@ -93,24 +94,20 @@ export default function CompetitionsPage() {
                   </p>
                   <ul>
                     <li>
-                      <a
-                        className={styles.placeholderLink}
-                        href="#"
-                        aria-disabled="true"
-                        tabIndex={-1}
+                      <Link
+                        className={styles.resourceLink}
+                        href="/competitions/coming-soon"
                       >
                         My IAC Experience
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
-                        className={styles.placeholderLink}
-                        href="#"
-                        aria-disabled="true"
-                        tabIndex={-1}
+                      <Link
+                        className={styles.resourceLink}
+                        href="/competitions/coming-soon"
                       >
                         The Complete IAC Strategy Guide
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -136,6 +133,82 @@ export default function CompetitionsPage() {
                   rel="noreferrer"
                 >
                   Explore IAC competitions <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </section>
+
+            <section className={styles.competitionSection}>
+              <div>
+                <p className={styles.kicker}>Team quiz competition</p>
+                <h2>National Academic Quiz Tournaments</h2>
+                <p className={styles.competitionName}>NAQT</p>
+              </div>
+              <div className={styles.competitionDetails}>
+                <p>
+                  The competition at NAQT is even more intense than IAC, as it
+                  is a middle and high school contest and seasoned competitors
+                  from IAC almost always land up there eventually.
+                </p>
+                <p>
+                  If you are new to history and quizzing, do not compete in
+                  NAQT. Stick with IAC and try NAQT after a few years.
+                </p>
+                <p>
+                  However, if you know A LOT about history or if you have
+                  competed in IAC for a few years, keep reading.
+                </p>
+                <p>
+                  NAQT is known for its team competitions, or as they are called
+                  in the quiz community, &ldquo;bowls.&rdquo; In any given round,
+                  the questions span science, history, geography, math, and
+                  literature/humanities. Again, even though there are science
+                  and math questions in the rounds, NAQT attracts mainly history
+                  and geography buffs.
+                </p>
+                <p>
+                  I&rsquo;ll be honest—I am very new to NAQT. At the time of
+                  writing this, I haven&rsquo;t even participated yet! However,
+                  I plan to form a team in high school. Stay tuned for my NAQT
+                  Chronicles, where I post updates on my NAQT journey. I hope it
+                  will be informative for anyone looking to start a team or join
+                  the contest themselves.
+                </p>
+
+                <div className={styles.competitionResources}>
+                  <p className={styles.kicker}>Follow the journey</p>
+                  <ul>
+                    <li>
+                      <Link
+                        className={styles.resourceLink}
+                        href="/competitions/coming-soon"
+                      >
+                        NAQT Chronicles
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
+                <ul className={styles.competitionFacts}>
+                  <li>
+                    <strong>Format</strong>
+                    Team-based quiz bowl competition.
+                  </li>
+                  <li>
+                    <strong>Subjects</strong>
+                    Science, history, geography, math, and literature.
+                  </li>
+                  <li>
+                    <strong>Best for</strong>
+                    Experienced quizzers ready for intense competition.
+                  </li>
+                </ul>
+                <a
+                  className={styles.competitionLink}
+                  href="https://www.naqt.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Explore NAQT competitions <span aria-hidden="true">↗</span>
                 </a>
               </div>
             </section>
