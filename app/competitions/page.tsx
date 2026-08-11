@@ -221,27 +221,60 @@ export default function CompetitionsPage() {
               </div>
               <div className={styles.competitionDetails}>
                 <p>
-                  NHD invites students in grades 6–12 to investigate a
-                  historical topic connected to an annual theme, build an
-                  evidence-based argument, and present the finished work to
-                  judges.
+                  You read the IAC and NAQT descriptions and decided memorizing
+                  facts was not for you. That&rsquo;s OK! Enter National History
+                  Day, another competition that focuses on creating historical
+                  projects. NHD is arguably more accessible to the general
+                  population than the quiz competitions, because there is
+                  something for everyone. You can compete in one of five
+                  categories.
                 </p>
                 <ul className={styles.competitionFacts}>
                   <li>
-                    <strong>Best for</strong>
-                    Students who want to dig deeply into sources and develop an
-                    original historical argument.
+                    <strong>Documentary</strong>
                   </li>
                   <li>
-                    <strong>Formats</strong>
-                    Documentary, exhibit, paper, performance, or website.
+                    <strong>Website</strong>
                   </li>
                   <li>
-                    <strong>Pathway</strong>
-                    Competition begins locally, with projects advancing through
-                    affiliate contests to the national level.
+                    <strong>Paper</strong>
+                  </li>
+                  <li>
+                    <strong>Exhibit</strong>
+                  </li>
+                  <li>
+                    <strong>Performance</strong>
                   </li>
                 </ul>
+                <p>
+                  See what I mean by &ldquo;there&rsquo;s something for
+                  everyone?&rdquo; I like public speaking and enacting
+                  characters, so I&rsquo;ve been competing in the Performance
+                  category for two years. My sister, on the other hand, enjoys
+                  video editing and working on Canva, so she&rsquo;s going to try
+                  her hand at a documentary this year. You can also choose to
+                  work as an individual, or in a group.
+                </p>
+                <p>
+                  Not only that, but there is also a broad theme each year that
+                  all projects must relate to. This year&rsquo;s theme is
+                  &ldquo;Innovation in History.&rdquo; Again, because the theme is
+                  so broad, you can use it to fit your interests. My sister and
+                  I have begun brainstorming. She is thinking of doing something
+                  related to AI, and I was toying with the idea of performing
+                  the story of Piggly Wiggly, the world&rsquo;s first self-service
+                  grocery store. They are so different, but both match our
+                  interests, and both fit under the category of innovation.
+                </p>
+                <p>
+                  NHD is a great way to learn about history because the process
+                  itself debunks so many of the myths about the subject. Like I
+                  stated before, people sadly think history is stuffy and
+                  irrelevant. But creating an NHD project is a hands-on,
+                  creative process where you are the boss of your own topic. And
+                  at the end of the day, you can point to a documentary,
+                  website, performance, etc., and say &ldquo;I did that!&rdquo;
+                </p>
                 <a
                   className={styles.competitionLink}
                   href="https://nhd.org/en/contest/get-started/"
