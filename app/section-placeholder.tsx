@@ -4,10 +4,12 @@ import SiteHeader from "./site-header";
 
 type SectionPlaceholderProps = {
   title: string;
+  description?: string;
 };
 
 export default function SectionPlaceholder({
   title,
+  description = "We’re working on this section now. Check back soon for something new from HistoryTeen.",
 }: SectionPlaceholderProps) {
   return (
     <div className={styles.page}>
@@ -16,10 +18,7 @@ export default function SectionPlaceholder({
         <div className={`${styles.container} ${styles.destinationInner}`}>
           <p className={styles.eyebrow}>Coming soon</p>
           <h1>{title}</h1>
-          <p className={styles.destinationIntro}>
-            We&rsquo;re working on this section now. Check back soon for
-            something new from HistoryTeen.
-          </p>
+          <p className={styles.destinationIntro}>{description}</p>
           <Link className={styles.backLink} href="/">
             Back to the homepage
           </Link>
