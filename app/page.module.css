@@ -608,6 +608,23 @@
   align-self: center;
 }
 
+.bookSideFigure {
+  min-width: 0;
+}
+
+.bookSideFigure .bookSideCover {
+  margin-top: 28px;
+}
+
+.bookSideFigure figcaption {
+  margin-top: 12px;
+  color: var(--accent);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .favorites {
   margin-top: 56px;
   padding-top: 36px;
@@ -753,6 +770,7 @@
     grid-row: 1;
     width: min(70vw, 280px);
   }
+
 }
 
 .blogList {
