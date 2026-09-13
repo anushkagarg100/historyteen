@@ -31,6 +31,7 @@ import trialsOfApolloCover from "../../public/trials-of-apollo-series.png";
 import travelBookCover from "../../public/travel-book-cover.png";
 import storiesGreatComposersCover from "../../public/stories-great-composers.png";
 import waltDisneyCover from "../../public/who-was-walt-disney.png";
+import yellowPaperAirplane from "../../public/yellow-paper-airplane.png";
 
 export const metadata: Metadata = {
   title: "Book Recommendations",
@@ -62,6 +63,10 @@ export default function BookRecommendationsPage() {
               and books keep me going.
             </p>
             <p>Enjoy!</p>
+          </div>
+
+          <div className={styles.bookPageCue} aria-hidden="true">
+            <Image src={yellowPaperAirplane} alt="" priority />
           </div>
 
           <section
