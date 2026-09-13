@@ -8,6 +8,7 @@ const NAV = [
   { label: "Blog", href: "/blog" },
   { label: "Interviews", href: "/interviews" },
   { label: "Comics", href: "/comics" },
+  { label: "Quiz", href: "/quiz" },
 ];
 
 export default function SiteHeader() {
