@@ -195,6 +195,7 @@
 /* ---------- Hero ---------- */
 
 .hero {
+  position: relative;
   padding-top: 88px;
   padding-bottom: 48px;
 }
@@ -664,8 +665,11 @@
 }
 
 .hero > .siteSearch {
+  position: absolute;
+  top: 22px;
+  right: 8px;
+  z-index: 10;
   width: min(100%, 340px);
-  margin-left: auto;
 }
 
 .destinationInner .siteSearch {
@@ -1294,6 +1298,12 @@
   .hero {
     padding-top: 56px;
     padding-bottom: 40px;
+  }
+
+  .hero > .siteSearch {
+    top: 16px;
+    right: 24px;
+    width: min(calc(100% - 48px), 300px);
   }
 
   .heroStage {

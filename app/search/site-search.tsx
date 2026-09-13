@@ -42,7 +42,7 @@ const SEARCH_ITEMS = [
   },
 ];
 
-export default function SiteSearch() {
+export default function SiteSearch({ compact = false }: { compact?: boolean }) {
   const [query, setQuery] = useState("");
   const normalizedQuery = query.trim().toLowerCase();
   const results = normalizedQuery
@@ -53,11 +53,12 @@ export default function SiteSearch() {
 
   return (
     <div className={styles.siteSearch}>
-      <label htmlFor="site-search">Search HistoryTeen</label>
+      {!compact && <label htmlFor="site-search">Search HistoryTeen</label>}
       <div className={styles.searchField}>
         <input
           id="site-search"
           type="search"
+          aria-label="Search HistoryTeen"
           value={query}
           placeholder="Search"
           onChange={(event) => setQuery(event.target.value)}

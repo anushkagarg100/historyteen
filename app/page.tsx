@@ -17,7 +17,7 @@ export default function Home() {
         {/* Hero */}
         <section className={styles.section}>
           <div className={`${styles.container} ${styles.hero}`}>
-            <SiteSearch />
+            <SiteSearch compact />
             <div className={styles.heroStage}>
               <div className={styles.heroPortraits} aria-label="Historical figures">
                 <figure className={`${styles.heroPortrait} ${styles.portraitAda}`}>
