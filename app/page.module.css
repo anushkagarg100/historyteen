@@ -876,16 +876,43 @@
   display: block;
 }
 
-.recommendationGroupTarget {
+.categoryResultsPage.showStories .elementaryStories,
+.categoryResultsPage.showReference .elementaryReference,
+.categoryResultsPage.showExpand .elementaryExpand {
   display: block;
-  height: 0;
-  scroll-margin-top: 112px;
 }
 
-:global(#elementary-stories):target ~ .elementaryStories,
-:global(#elementary-reference):target ~ .elementaryReference,
-:global(#elementary-expand):target ~ .elementaryExpand {
-  display: block;
+.recommendationCategoryLinks {
+  display: grid;
+  grid-template-columns: minmax(0, 460px);
+  gap: 14px;
+}
+
+.recommendationCategoryLinks a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 58px;
+  padding: 15px 20px;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  color: var(--foreground);
+  background: #fff8f5;
+  font-family: var(--font-serif-display), Georgia, serif;
+  font-size: 19px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.recommendationCategoryLinks a::after {
+  content: "→";
+  color: var(--accent);
+  font-size: 24px;
+}
+
+.recommendationCategoryLinks a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .bookRecommendation {

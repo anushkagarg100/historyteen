@@ -39,7 +39,23 @@ export const metadata: Metadata = {
     "The best way to dive into the past is by reading about it. Explore recommendations for starting your history journey.",
 };
 
-export default function BookRecommendationsPage() {
+export type ElementaryCategory = "stories" | "reference" | "expand";
+
+const elementaryCategoryTitles: Record<ElementaryCategory, string> = {
+  stories: "Stories: Nonfiction AND Fiction",
+  reference: "Reference Books",
+  expand: "Expand Your Knowledge",
+};
+
+export function BookRecommendationsContent({
+  elementaryCategory,
+}: {
+  elementaryCategory?: ElementaryCategory;
+}) {
+  const categoryTitle = elementaryCategory
+    ? elementaryCategoryTitles[elementaryCategory]
+    : null;
+
   return (
     <div className={styles.page}>
       <SiteHeader />
@@ -48,8 +64,8 @@ export default function BookRecommendationsPage() {
           className={`${styles.container} ${styles.destinationInner} ${styles.bookRecommendationsContainer}`}
         >
           <p className={styles.eyebrow}>Book recommendations</p>
-          <h1>Book Recommendations</h1>
-          <div className={styles.destinationIntro}>
+          <h1>{categoryTitle ?? "Book Recommendations"}</h1>
+          {!elementaryCategory && <div className={styles.destinationIntro}>
             <p>
               The best way to dive into the past is by reading about it, so here
               are some reading recommendation if you are just starting your
@@ -63,34 +79,30 @@ export default function BookRecommendationsPage() {
               and books keep me going.
             </p>
             <p>Enjoy!</p>
-          </div>
+          </div>}
 
-          <div className={styles.bookPageCue} aria-hidden="true">
+          {!elementaryCategory && <div className={styles.bookPageCue} aria-hidden="true">
             <Image src={yellowPaperAirplane} alt="" priority />
-          </div>
+          </div>}
 
           <section
-            className={`${styles.recommendationSection} ${styles.collapsibleRecommendations}`}
+            className={`${styles.recommendationSection} ${styles.collapsibleRecommendations} ${elementaryCategory ? styles.categoryResultsPage : ""} ${elementaryCategory === "stories" ? styles.showStories : ""} ${elementaryCategory === "reference" ? styles.showReference : ""} ${elementaryCategory === "expand" ? styles.showExpand : ""}`}
           >
-            <h2>For Elementary Schoolers:</h2>
-            <nav
-              className={styles.recommendationLinks}
+            {!elementaryCategory && <h2>For Elementary Schoolers:</h2>}
+            {!elementaryCategory && <nav
+              className={`${styles.recommendationLinks} ${styles.recommendationCategoryLinks}`}
               aria-label="Younger readers recommendations"
             >
-              <RecommendationLink href="#elementary-stories">
+              <Link href="/book-recommendations/stories">
                 Stories: Nonfiction AND Fiction
-              </RecommendationLink>
-              <RecommendationLink href="#elementary-reference">
+              </Link>
+              <Link href="/book-recommendations/reference-books">
                 Reference Books
-              </RecommendationLink>
-              <RecommendationLink href="#elementary-expand">
+              </Link>
+              <Link href="/book-recommendations/expand-your-knowledge">
                 Expand Your Knowledge
-              </RecommendationLink>
-            </nav>
-
-            <span id="elementary-stories" className={styles.recommendationGroupTarget} />
-            <span id="elementary-reference" className={styles.recommendationGroupTarget} />
-            <span id="elementary-expand" className={styles.recommendationGroupTarget} />
+              </Link>
+            </nav>}
 
             <article id="who-was" className={`${styles.bookRecommendation} ${styles.elementaryExpand}`}>
               <h3>Who Was?</h3>
@@ -573,7 +585,7 @@ export default function BookRecommendationsPage() {
             </article>
           </section>
 
-          <section
+          {!elementaryCategory && <section
             className={`${styles.recommendationSection} ${styles.collapsibleRecommendations}`}
           >
             <h2>For Middle School and Above:</h2>
@@ -912,13 +924,17 @@ export default function BookRecommendationsPage() {
                 />
               </div>
             </article>
-          </section>
+          </section>}
 
-          <Link className={styles.backLink} href="/">
-            Back to the homepage
+          <Link className={styles.backLink} href={elementaryCategory ? "/book-recommendations" : "/"}>
+            {elementaryCategory ? "Back to all book recommendations" : "Back to the homepage"}
           </Link>
         </div>
       </main>
     </div>
   );
+}
+
+export default function BookRecommendationsPage() {
+  return <BookRecommendationsContent />;
 }
