@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import styles from "./page.module.css";
 import SiteSearch from "./search/site-search";
 import SiteHeader from "./site-header";
@@ -58,50 +57,8 @@ export default function Home() {
                 <p className={styles.heroSubhead}>Ready to dive in?</p>
               </div>
             </div>
-            <details className={styles.imageCredits}>
-              <summary>Portrait credits</summary>
-              Public-domain images from Wikimedia Commons: {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Ada_Lovelace_portrait.jpg">Ada Lovelace</a>, {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg">George Washington</a>, {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Harriet_Tubman_(circa_1885).jpg">Harriet Tubman</a>, {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_Marie_Curie.jpg">Marie Curie</a>, {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Frederick_Douglass_(circa_1879).jpg">Frederick Douglass</a>, {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_Susan_B._Anthony.jpg">Susan B. Anthony</a>, {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Nikola_Tesla.jpg">Nikola Tesla</a>, and {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Liliuokalani_LCCN2004679211.jpg">Queen Liliʻuokalani</a>.
-            </details>
-            <p className={styles.lede}>
-              HistoryTeen publishes long-form essays on the ancient world,
-              empire, revolution, and the century that made ours. Every claim is
-              sourced. Nothing is rounded down.
-            </p>
-            <Link className={`${styles.button} ${styles.homeQuizLink}`} href="/quiz">
-              Take a quiz
-            </Link>
           </div>
         </section>
-
-        {/* Coming soon */}
-        <section className={styles.section}>
-          <div
-            className={`${styles.container} ${styles.sectionBody} ${styles.comingSoonBody}`}
-          >
-            <aside className={styles.comingSoon} aria-labelledby="coming-soon-title">
-              <h2 id="coming-soon-title">Coming Soon:</h2>
-              <ul>
-                <li>
-                  <strong>Comics section:</strong> The Adventures of Mac, the
-                  Time-Traveling Snail
-                </li>
-                <li>
-                  <strong>Interviews:</strong> Text/email me any suggestions for
-                  who I should interview!
-                </li>
-              </ul>
-            </aside>
-          </div>
-        </section>
-
       </main>
 
       <footer className={styles.footer}>
