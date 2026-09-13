@@ -54,7 +54,7 @@ export default function Home() {
                 </figure>
               </div>
               <div className={styles.heroHeadline}>
-                <h1>YOUR history space</h1>
+                <h1>YOUR history space.</h1>
                 <p className={styles.heroSubhead}>Ready to dive in?</p>
               </div>
             </div>
