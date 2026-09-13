@@ -40,6 +40,7 @@ export const metadata: Metadata = {
 };
 
 export type ElementaryCategory = "stories" | "reference" | "expand";
+export type OlderCategory = "big-history" | "controversial" | "science";
 
 const elementaryCategoryTitles: Record<ElementaryCategory, string> = {
   stories: "Stories: Nonfiction AND Fiction",
@@ -47,14 +48,24 @@ const elementaryCategoryTitles: Record<ElementaryCategory, string> = {
   expand: "Expand Your Knowledge",
 };
 
+const olderCategoryTitles: Record<OlderCategory, string> = {
+  "big-history": "Big History",
+  controversial: "Controversial Topics",
+  science: "Science and Stuff",
+};
+
 export function BookRecommendationsContent({
   elementaryCategory,
+  olderCategory,
 }: {
   elementaryCategory?: ElementaryCategory;
+  olderCategory?: OlderCategory;
 }) {
   const categoryTitle = elementaryCategory
     ? elementaryCategoryTitles[elementaryCategory]
-    : null;
+    : olderCategory
+      ? olderCategoryTitles[olderCategory]
+      : null;
 
   return (
     <div className={styles.page}>
@@ -65,7 +76,7 @@ export function BookRecommendationsContent({
         >
           <p className={styles.eyebrow}>Book recommendations</p>
           <h1>{categoryTitle ?? "Book Recommendations"}</h1>
-          {!elementaryCategory && <div className={styles.destinationIntro}>
+          {!elementaryCategory && !olderCategory && <div className={styles.destinationIntro}>
             <p>
               The best way to dive into the past is by reading about it, so here
               are some reading recommendation if you are just starting your
@@ -81,11 +92,11 @@ export function BookRecommendationsContent({
             <p>Enjoy!</p>
           </div>}
 
-          {!elementaryCategory && <div className={styles.bookPageCue} aria-hidden="true">
+          {!elementaryCategory && !olderCategory && <div className={styles.bookPageCue} aria-hidden="true">
             <Image src={yellowPaperAirplane} alt="" priority />
           </div>}
 
-          <section
+          {!olderCategory && <section
             className={`${styles.recommendationSection} ${styles.collapsibleRecommendations} ${elementaryCategory ? styles.categoryResultsPage : ""} ${elementaryCategory === "stories" ? styles.showStories : ""} ${elementaryCategory === "reference" ? styles.showReference : ""} ${elementaryCategory === "expand" ? styles.showExpand : ""}`}
           >
             {!elementaryCategory && <h2>For Elementary Schoolers:</h2>}
@@ -583,38 +594,26 @@ export function BookRecommendationsContent({
                 />
               </div>
             </article>
-          </section>
+          </section>}
 
           {!elementaryCategory && <section
-            className={`${styles.recommendationSection} ${styles.collapsibleRecommendations}`}
+            className={`${styles.recommendationSection} ${styles.collapsibleRecommendations} ${olderCategory ? styles.categoryResultsPage : ""} ${olderCategory === "big-history" ? styles.showBigHistory : ""} ${olderCategory === "controversial" ? styles.showControversial : ""} ${olderCategory === "science" ? styles.showScience : ""}`}
           >
-            <h2>For Middle School and Above:</h2>
-            <nav
-              className={styles.recommendationLinks}
+            {!olderCategory && <h2>For Middle School and Above:</h2>}
+            {!olderCategory && <nav
+              className={`${styles.recommendationLinks} ${styles.recommendationCategoryLinks}`}
               aria-label="Older readers recommendations"
             >
-              <RecommendationLink href="#indigenous-peoples-history">
-                An Indigenous People&rsquo;s History of the United States
-              </RecommendationLink>
-              <RecommendationLink href="#guns-germs-steel">
-                Guns, Germs, and Steel
-              </RecommendationLink>
-              <RecommendationLink href="#how-we-got-to-now">
-                How We Got To Now
-              </RecommendationLink>
-              <RecommendationLink href="#lies-my-teacher-told-me">
-                Lies My Teacher Told Me
-              </RecommendationLink>
-              <RecommendationLink href="#sapiens">Sapiens</RecommendationLink>
-              <RecommendationLink href="#poison-squad">
-                The Poison Squad
-              </RecommendationLink>
-              <RecommendationLink href="#shortest-history">
-                The Shortest History
-              </RecommendationLink>
-            </nav>
+              <Link href="/book-recommendations/big-history">Big History</Link>
+              <Link href="/book-recommendations/controversial-topics">
+                Controversial Topics
+              </Link>
+              <Link href="/book-recommendations/science-and-stuff">
+                Science and Stuff
+              </Link>
+            </nav>}
 
-            <article id="sapiens" className={styles.bookRecommendation}>
+            <article id="sapiens" className={`${styles.bookRecommendation} ${styles.olderBigHistory}`}>
               <h3>Sapiens</h3>
               <p className={styles.bookAuthor}>By Yuval Noah Harari</p>
               <div className={styles.bookWithCover}>
@@ -728,7 +727,7 @@ export function BookRecommendationsContent({
               </div>
             </article>
 
-            <article id="guns-germs-steel" className={styles.bookRecommendation}>
+            <article id="guns-germs-steel" className={`${styles.bookRecommendation} ${styles.olderBigHistory}`}>
               <h3>Guns, Germs, and Steel</h3>
               <p className={styles.bookAuthor}>By Jared Diamond</p>
               <div className={styles.bookWithCover}>
@@ -757,7 +756,7 @@ export function BookRecommendationsContent({
               </div>
             </article>
 
-            <article id="shortest-history" className={styles.bookRecommendation}>
+            <article id="shortest-history" className={`${styles.bookRecommendation} ${styles.olderBigHistory}`}>
               <h3>The Shortest History series</h3>
               <p className={styles.bookAuthor}>By multiple authors</p>
               <div className={styles.bookWithCover}>
@@ -788,7 +787,7 @@ export function BookRecommendationsContent({
 
             <article
               id="lies-my-teacher-told-me"
-              className={styles.bookRecommendation}
+              className={`${styles.bookRecommendation} ${styles.olderControversial}`}
             >
               <h3>Lies My Teacher Told Me</h3>
               <p className={styles.bookAuthor}>By James Loewen</p>
@@ -834,7 +833,7 @@ export function BookRecommendationsContent({
               </div>
             </article>
 
-            <article id="how-we-got-to-now" className={styles.bookRecommendation}>
+            <article id="how-we-got-to-now" className={`${styles.bookRecommendation} ${styles.olderScience}`}>
               <h3>How We Got To Now</h3>
               <p className={styles.bookAuthor}>By Steven Johnson</p>
               <div className={styles.bookWithCover}>
@@ -865,7 +864,7 @@ export function BookRecommendationsContent({
               </div>
             </article>
 
-            <article id="poison-squad" className={styles.bookRecommendation}>
+            <article id="poison-squad" className={`${styles.bookRecommendation} ${styles.olderScience}`}>
               <h3>The Poison Squad</h3>
               <p className={styles.bookAuthor}>By Deborah Blum</p>
               <div className={styles.bookWithCover}>
@@ -903,7 +902,7 @@ export function BookRecommendationsContent({
 
             <article
               id="indigenous-peoples-history"
-              className={styles.bookRecommendation}
+              className={`${styles.bookRecommendation} ${styles.olderControversial}`}
             >
               <h3>An Indigenous People&rsquo;s History of the United States</h3>
               <p className={styles.bookAuthor}>By Roxanne Dunbar-Ortiz</p>
@@ -926,8 +925,8 @@ export function BookRecommendationsContent({
             </article>
           </section>}
 
-          <Link className={styles.backLink} href={elementaryCategory ? "/book-recommendations" : "/"}>
-            {elementaryCategory ? "Back to all book recommendations" : "Back to the homepage"}
+          <Link className={styles.backLink} href={elementaryCategory || olderCategory ? "/book-recommendations" : "/"}>
+            {elementaryCategory || olderCategory ? "Back to all book recommendations" : "Back to the homepage"}
           </Link>
         </div>
       </main>

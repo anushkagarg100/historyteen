@@ -878,7 +878,10 @@
 
 .categoryResultsPage.showStories .elementaryStories,
 .categoryResultsPage.showReference .elementaryReference,
-.categoryResultsPage.showExpand .elementaryExpand {
+.categoryResultsPage.showExpand .elementaryExpand,
+.categoryResultsPage.showBigHistory .olderBigHistory,
+.categoryResultsPage.showControversial .olderControversial,
+.categoryResultsPage.showScience .olderScience {
   display: block;
 }
 
