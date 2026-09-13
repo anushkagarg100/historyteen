@@ -206,9 +206,12 @@
 
 .heroStage {
   position: relative;
-  min-height: 560px;
+  left: 50%;
+  width: min(1280px, calc(100vw - 24px));
+  min-height: 650px;
   margin-top: 12px;
   overflow: hidden;
+  transform: translateX(-50%);
   background:
     radial-gradient(circle at 13% 72%, var(--gold) 0 8%, transparent 8.2%),
     radial-gradient(circle at 88% 34%, var(--blush) 0 11%, transparent 11.2%),
@@ -251,11 +254,14 @@
   text-transform: uppercase;
 }
 
-.portraitAda { left: -2%; bottom: 24px; width: 220px; height: 305px; transform: rotate(-6deg); }
-.portraitWashington { left: 14%; bottom: -26px; width: 265px; height: 370px; transform: rotate(3deg); }
-.portraitHarriet { left: 50%; bottom: -36px; width: 285px; height: 400px; transform: translateX(-50%) rotate(-1deg); z-index: 3; }
-.portraitMarie { right: 14%; bottom: -22px; width: 245px; height: 345px; transform: rotate(-3deg); z-index: 2; }
-.portraitFrederick { right: -2%; bottom: 28px; width: 220px; height: 300px; transform: rotate(6deg); }
+.portraitTesla { left: 5%; bottom: 260px; width: 210px; height: 285px; transform: rotate(5deg); }
+.portraitLiliuokalani { left: 50%; bottom: 172px; width: 235px; height: 320px; transform: translateX(-50%) rotate(2deg); }
+.portraitSusan { right: 5%; bottom: 260px; width: 210px; height: 285px; transform: rotate(-5deg); }
+.portraitAda { left: -1%; bottom: 22px; width: 245px; height: 340px; transform: rotate(-6deg); z-index: 2; }
+.portraitWashington { left: 17%; bottom: -30px; width: 290px; height: 405px; transform: rotate(3deg); z-index: 2; }
+.portraitHarriet { left: 50%; bottom: -40px; width: 315px; height: 440px; transform: translateX(-50%) rotate(-1deg); z-index: 3; }
+.portraitMarie { right: 17%; bottom: -26px; width: 270px; height: 380px; transform: rotate(-3deg); z-index: 2; }
+.portraitFrederick { right: -1%; bottom: 26px; width: 245px; height: 335px; transform: rotate(6deg); z-index: 2; }
 
 .heroHeadline {
   position: relative;
@@ -1313,12 +1319,16 @@
   }
 
   .heroStage {
-    min-height: 470px;
+    width: calc(100vw - 12px);
+    min-height: 510px;
     margin-top: 8px;
   }
 
   .heroPortrait { border-width: 4px; }
   .heroPortrait figcaption { display: none; }
+  .portraitTesla { left: -3%; bottom: 245px; width: 25vw; height: 35vw; }
+  .portraitLiliuokalani { left: 50%; bottom: 185px; width: 28vw; height: 40vw; }
+  .portraitSusan { right: -3%; bottom: 245px; width: 25vw; height: 35vw; }
   .portraitAda { left: -8%; bottom: 70px; width: 31vw; height: 43vw; }
   .portraitWashington { left: 10%; bottom: -8px; width: 35vw; height: 50vw; }
   .portraitHarriet { bottom: -18px; width: 36vw; height: 52vw; }

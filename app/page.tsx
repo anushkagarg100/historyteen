@@ -20,6 +20,18 @@ export default function Home() {
             <SiteSearch compact />
             <div className={styles.heroStage}>
               <div className={styles.heroPortraits} aria-label="Historical figures">
+                <figure className={`${styles.heroPortrait} ${styles.portraitTesla}`}>
+                  <Image src="/historical-figures/nikola-tesla.jpg" alt="Portrait of Nikola Tesla" fill sizes="(max-width: 600px) 25vw, 210px" />
+                  <figcaption>Nikola Tesla</figcaption>
+                </figure>
+                <figure className={`${styles.heroPortrait} ${styles.portraitLiliuokalani}`}>
+                  <Image src="/historical-figures/queen-liliuokalani.jpg" alt="Photograph of Queen Liliʻuokalani" fill sizes="(max-width: 600px) 28vw, 235px" />
+                  <figcaption>Queen Liliʻuokalani</figcaption>
+                </figure>
+                <figure className={`${styles.heroPortrait} ${styles.portraitSusan}`}>
+                  <Image src="/historical-figures/susan-b-anthony.jpg" alt="Photograph of Susan B. Anthony" fill sizes="(max-width: 600px) 25vw, 210px" />
+                  <figcaption>Susan B. Anthony</figcaption>
+                </figure>
                 <figure className={`${styles.heroPortrait} ${styles.portraitAda}`}>
                   <Image src="/historical-figures/ada-lovelace.jpg" alt="Portrait of Ada Lovelace" fill sizes="(max-width: 600px) 31vw, 210px" />
                   <figcaption>Ada Lovelace</figcaption>
@@ -51,8 +63,11 @@ export default function Home() {
               <a href="https://commons.wikimedia.org/wiki/File:Ada_Lovelace_portrait.jpg">Ada Lovelace</a>, {" "}
               <a href="https://commons.wikimedia.org/wiki/File:Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg">George Washington</a>, {" "}
               <a href="https://commons.wikimedia.org/wiki/File:Harriet_Tubman_(circa_1885).jpg">Harriet Tubman</a>, {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_Marie_Curie.jpg">Marie Curie</a>, and {" "}
-              <a href="https://commons.wikimedia.org/wiki/File:Frederick_Douglass_(circa_1879).jpg">Frederick Douglass</a>.
+              <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_Marie_Curie.jpg">Marie Curie</a>, {" "}
+              <a href="https://commons.wikimedia.org/wiki/File:Frederick_Douglass_(circa_1879).jpg">Frederick Douglass</a>, {" "}
+              <a href="https://commons.wikimedia.org/wiki/File:Portrait_of_Susan_B._Anthony.jpg">Susan B. Anthony</a>, {" "}
+              <a href="https://commons.wikimedia.org/wiki/File:Nikola_Tesla.jpg">Nikola Tesla</a>, and {" "}
+              <a href="https://commons.wikimedia.org/wiki/File:Liliuokalani_LCCN2004679211.jpg">Queen Liliʻuokalani</a>.
             </details>
             <p className={styles.lede}>
               HistoryTeen publishes long-form essays on the ancient world,
