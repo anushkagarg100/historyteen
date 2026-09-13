@@ -77,25 +77,6 @@ export default function BookRecommendationsPage() {
               className={styles.recommendationLinks}
               aria-label="Younger readers recommendations"
             >
-              <RecommendationLink href="#who-was">Who Was</RecommendationLink>
-              <RecommendationLink href="#kid-legends">
-                Kid Legends
-              </RecommendationLink>
-              <RecommendationLink href="#percy-jackson">
-                Percy Jackson and the Olympians
-              </RecommendationLink>
-              <RecommendationLink href="#little-monsters">
-                Little Monsters
-              </RecommendationLink>
-              <RecommendationLink href="#geronimo-stilton">
-                Geronimo Stilton
-              </RecommendationLink>
-              <RecommendationLink href="#rebel-girls">
-                Goodnight Stories for Rebel Girls
-              </RecommendationLink>
-              <RecommendationLink href="#travel-book">
-                The Travel Book
-              </RecommendationLink>
               <RecommendationLink href="#childs-introduction">
                 A Child&rsquo;s Introduction
               </RecommendationLink>
@@ -105,6 +86,25 @@ export default function BookRecommendationsPage() {
               <RecommendationLink href="#food-fight">
                 Food Fight!
               </RecommendationLink>
+              <RecommendationLink href="#geronimo-stilton">
+                Geronimo Stilton
+              </RecommendationLink>
+              <RecommendationLink href="#rebel-girls">
+                Goodnight Stories for Rebel Girls
+              </RecommendationLink>
+              <RecommendationLink href="#kid-legends">
+                Kid Legends
+              </RecommendationLink>
+              <RecommendationLink href="#little-monsters">
+                Little Monsters
+              </RecommendationLink>
+              <RecommendationLink href="#percy-jackson">
+                Percy Jackson and the Olympians
+              </RecommendationLink>
+              <RecommendationLink href="#travel-book">
+                The Travel Book
+              </RecommendationLink>
+              <RecommendationLink href="#who-was">Who Was</RecommendationLink>
             </nav>
 
             <article id="who-was" className={styles.bookRecommendation}>
@@ -596,24 +596,24 @@ export default function BookRecommendationsPage() {
               className={styles.recommendationLinks}
               aria-label="Older readers recommendations"
             >
-              <RecommendationLink href="#sapiens">Sapiens</RecommendationLink>
+              <RecommendationLink href="#indigenous-peoples-history">
+                An Indigenous People&rsquo;s History of the United States
+              </RecommendationLink>
               <RecommendationLink href="#guns-germs-steel">
                 Guns, Germs, and Steel
-              </RecommendationLink>
-              <RecommendationLink href="#shortest-history">
-                The Shortest History
-              </RecommendationLink>
-              <RecommendationLink href="#lies-my-teacher-told-me">
-                Lies My Teacher Told Me
               </RecommendationLink>
               <RecommendationLink href="#how-we-got-to-now">
                 How We Got To Now
               </RecommendationLink>
+              <RecommendationLink href="#lies-my-teacher-told-me">
+                Lies My Teacher Told Me
+              </RecommendationLink>
+              <RecommendationLink href="#sapiens">Sapiens</RecommendationLink>
               <RecommendationLink href="#poison-squad">
                 The Poison Squad
               </RecommendationLink>
-              <RecommendationLink href="#indigenous-peoples-history">
-                An Indigenous People&rsquo;s History of the United States
+              <RecommendationLink href="#shortest-history">
+                The Shortest History
               </RecommendationLink>
             </nav>
 
