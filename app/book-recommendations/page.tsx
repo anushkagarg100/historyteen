@@ -43,7 +43,9 @@ export default function BookRecommendationsPage() {
     <div className={styles.page}>
       <SiteHeader />
       <main className={styles.destination}>
-        <div className={`${styles.container} ${styles.destinationInner}`}>
+        <div
+          className={`${styles.container} ${styles.destinationInner} ${styles.bookRecommendationsContainer}`}
+        >
           <p className={styles.eyebrow}>Book recommendations</p>
           <h1>Book Recommendations</h1>
           <div className={styles.destinationIntro}>
