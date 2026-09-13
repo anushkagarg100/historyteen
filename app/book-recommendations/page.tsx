@@ -72,7 +72,7 @@ export default function BookRecommendationsPage() {
           <section
             className={`${styles.recommendationSection} ${styles.collapsibleRecommendations}`}
           >
-            <h2>For Younger Readers:</h2>
+            <h2>For Elementary Schoolers:</h2>
             <nav
               className={styles.recommendationLinks}
               aria-label="Younger readers recommendations"
@@ -591,7 +591,7 @@ export default function BookRecommendationsPage() {
           <section
             className={`${styles.recommendationSection} ${styles.collapsibleRecommendations}`}
           >
-            <h2>For Older Readers:</h2>
+            <h2>For Middle School and Above:</h2>
             <nav
               className={styles.recommendationLinks}
               aria-label="Older readers recommendations"
