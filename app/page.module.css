@@ -672,6 +672,12 @@
   width: min(100%, 300px);
 }
 
+@media (min-width: 1041px) {
+  .hero > .siteSearch {
+    right: calc((1040px - 100vw) / 2 + 20px);
+  }
+}
+
 .destinationInner .siteSearch {
   margin-top: 42px;
 }
