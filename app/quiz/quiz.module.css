@@ -43,6 +43,29 @@
   letter-spacing: -0.03em;
 }
 
+.quizIntro {
+  max-width: 62ch;
+  margin-top: 24px;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.quizIntro p + p {
+  margin-top: 16px;
+}
+
+.quizIntro a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.quizIntro a:hover {
+  color: var(--accent);
+}
+
 .quizLink {
   display: flex;
   align-items: center;

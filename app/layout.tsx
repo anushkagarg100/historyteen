@@ -1,12 +1,6 @@
 import type { Metadata } from "next";
-import { Source_Serif_4, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
-
-const serifDisplay = Source_Serif_4({
-  variable: "--font-serif-display",
-  subsets: ["latin"],
-  display: "swap",
-});
 
 const sansUi = Inter({
   variable: "--font-sans-ui",
@@ -54,7 +48,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${serifDisplay.variable} ${sansUi.variable}`}>
+    <html lang="en" className={sansUi.variable}>
       <body>{children}</body>
     </html>
   );

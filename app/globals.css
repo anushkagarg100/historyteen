@@ -1,24 +1,13 @@
 :root {
-  /* Paper-and-ink palette. Academic minimal: near-monochrome, one accent. */
-  --background: #fbfaf7;
-  --foreground: #14130f;
-  --muted: #6b6862;
-  --rule: #e0ddd4;
-  --accent: #7a2e2e;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #111110;
-    --foreground: #edeae3;
-    --muted: #99958c;
-    --rule: #2b2a26;
-    --accent: #c98b8b;
-  }
-
-  html {
-    color-scheme: dark;
-  }
+  --font-serif-display: "Century Gothic", "Avenir Next", "Trebuchet MS",
+    sans-serif;
+  --background: #fff;
+  --foreground: #17120f;
+  --muted: #6e5b53;
+  --rule: #f0d8d1;
+  --accent: #ef765f;
+  --gold: #ffb81c;
+  --blush: #f7c2b4;
 }
 
 html {

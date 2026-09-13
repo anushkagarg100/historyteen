@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./quiz.module.css";
 
 type Choice = {
@@ -372,6 +373,23 @@ export default function Quiz() {
       <section className={styles.quizLanding} aria-labelledby="quiz-list-title">
         <p className={styles.eyebrow}>Quizzes</p>
         <h1 id="quiz-list-title">Test your historical instincts.</h1>
+        <div className={styles.quizIntro}>
+          <p>
+            Quizzes, in my opinion, are the best way to learn something, so put
+            your history knowledge to the test here!
+          </p>
+          <p>
+            Other quizzes you can try:{" "}
+            <a href="https://www.qbreader.org/">QBReader</a> and{" "}
+            <a href="https://quizvidya.com/">QuizVidya</a> are useful if you
+            are preparing for <Link href="/competitions#iac">IAC</Link>. For
+            something more fun and lighthearted, check out{" "}
+            <a href="https://www.jetpunk.com/">JetPunk</a> and Mental Floss&rsquo;s{" "}
+            <a href="https://www.mentalfloss.com/kennections">Kennections</a>.
+            (The creator, Ken Jennings, is well known for being a 74-time winner
+            on <i>Jeopardy!</i> I&rsquo;m a big fan.)
+          </p>
+        </div>
         <a
           className={styles.quizLink}
           href="#presidency-quiz"

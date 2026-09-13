@@ -17,10 +17,19 @@ export default function CompetitionsPage() {
         <div className={`${styles.container} ${styles.destinationInner}`}>
           <p className={styles.eyebrow}>Competitions</p>
           <h1>Put your historical thinking to the test.</h1>
-          <p className={styles.destinationIntro}>
-            From fast-paced quiz tournaments to months-long original research,
-            these are some of the best places to compete in history.
-          </p>
+          <div className={styles.destinationIntro}>
+            <p>
+              Reading about history is great, but after a while, you might want
+              something more-- a place to test your knowledge, maybe, or a
+              community of like-minded people.
+            </p>
+            <p>
+              If you are searching for a reason to get interested in history,
+              or you want a bigger challenge, look no further. These
+              competitions are designed to be interesting, sometimes intense,
+              but above all, fun!
+            </p>
+          </div>
 
           <div className={styles.competitionList}>
             <section className={styles.competitionSection}>
@@ -137,7 +146,7 @@ export default function CompetitionsPage() {
               </div>
             </section>
 
-            <section className={styles.competitionSection}>
+            <section id="iac" className={styles.competitionSection}>
               <div>
                 <p className={styles.kicker}>Team quiz competition</p>
                 <h2>National Academic Quiz Tournaments</h2>
