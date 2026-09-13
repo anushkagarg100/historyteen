@@ -59,6 +59,60 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <section className={styles.homeIntroSection}>
+          <div className={`${styles.container} ${styles.homeIntro}`}>
+            <div className={styles.homeIntroCopy}>
+              <p className={styles.homeIntroLead}>
+                Hi! I&rsquo;m Anushka, history buff in charge. History captured
+                my heart as I was watching an episode of Jeopardy! and I&rsquo;ve
+                never looked back since.
+              </p>
+              <p>
+                I&rsquo;ve competed in two main formats--the first one being
+                International Academic Competitions, which focuses on history
+                trivia, and the second being National History Day, which is
+                about history projects. Over the years, I&rsquo;ve taken part in
+                both national and international tournaments--be it in Florida,
+                Maryland, and even Paris--and the journey has been SO much fun.
+              </p>
+              <p>
+                This website is the space I wish I had when I was just starting
+                out--competition recommendations, interviews from people in the
+                field, quizzes to test my skills; all of these are designed to
+                help you ignite your own path forward in history.
+              </p>
+              <p className={styles.factsLead}>
+                I&rsquo;ll leave you with some of my favorite facts that I love
+                to tell people:
+              </p>
+            </div>
+
+            <ol className={styles.favoriteFacts}>
+              <li>
+                Our 30th president, Calvin Coolidge, was known for being quiet.
+                So quiet, in fact, that a dinner party guest betted that she
+                could get three words out of him. He responded, simply,
+                &ldquo;You lose.&rdquo;
+              </li>
+              <li>
+                At the start of the Civil War, people thought it wouldn&rsquo;t
+                be a super big deal. So many people packed a picnic and watched
+                the First Battle of Bull Run from the hilltops, thinking it
+                would be some &ldquo;nice entertainment.&rdquo; (As you can
+                guess, it wasn&rsquo;t)
+              </li>
+              <li>
+                It the mid-1700s, Europeans thought potatoes were poisonous. So
+                Frederick the Great, emperor of Prussia (w modern day northern
+                Germany, Poland, Lithuania, and parts of Russia) grew a field of
+                potatoes and guarded it so the potatoes would seem valuable. It
+                worked, and people began stealing them. Way to use psychology,
+                Freud-rick the Great!
+              </li>
+            </ol>
+          </div>
+        </section>
       </main>
 
       <footer className={styles.footer}>
