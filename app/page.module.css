@@ -340,6 +340,27 @@
   font-weight: 700;
 }
 
+.homeSignoff {
+  margin-top: 42px;
+  color: var(--foreground);
+  font-family: var(--font-serif-display), Georgia, serif;
+  font-size: clamp(20px, 2.4vw, 27px);
+  line-height: 1.5;
+  text-align: center;
+}
+
+.homeSignoff a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 5px;
+}
+
+.homeSignoff a:hover {
+  color: var(--foreground);
+}
+
 .actions {
   margin-top: 40px;
   display: flex;

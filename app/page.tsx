@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 import SiteSearch from "./search/site-search";
 import SiteHeader from "./site-header";
@@ -111,6 +112,11 @@ export default function Home() {
                 Freud-rick the Great!
               </li>
             </ol>
+
+            <p className={styles.homeSignoff}>
+              Enjoy! Learn more about <Link href="/about">Our mission</Link> if
+              you are interested.
+            </p>
           </div>
         </section>
       </main>
