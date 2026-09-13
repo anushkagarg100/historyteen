@@ -77,37 +77,22 @@ export default function BookRecommendationsPage() {
               className={styles.recommendationLinks}
               aria-label="Younger readers recommendations"
             >
-              <RecommendationLink href="#childs-introduction">
-                A Child&rsquo;s Introduction
+              <RecommendationLink href="#elementary-stories">
+                Stories: Nonfiction AND Fiction
               </RecommendationLink>
-              <RecommendationLink href="#long-walk-to-water">
-                A Long Walk to Water
+              <RecommendationLink href="#elementary-reference">
+                Reference Books
               </RecommendationLink>
-              <RecommendationLink href="#food-fight">
-                Food Fight!
+              <RecommendationLink href="#elementary-expand">
+                Expand Your Knowledge
               </RecommendationLink>
-              <RecommendationLink href="#geronimo-stilton">
-                Geronimo Stilton
-              </RecommendationLink>
-              <RecommendationLink href="#rebel-girls">
-                Goodnight Stories for Rebel Girls
-              </RecommendationLink>
-              <RecommendationLink href="#kid-legends">
-                Kid Legends
-              </RecommendationLink>
-              <RecommendationLink href="#little-monsters">
-                Little Monsters
-              </RecommendationLink>
-              <RecommendationLink href="#percy-jackson">
-                Percy Jackson and the Olympians
-              </RecommendationLink>
-              <RecommendationLink href="#travel-book">
-                The Travel Book
-              </RecommendationLink>
-              <RecommendationLink href="#who-was">Who Was</RecommendationLink>
             </nav>
 
-            <article id="who-was" className={styles.bookRecommendation}>
+            <span id="elementary-stories" className={styles.recommendationGroupTarget} />
+            <span id="elementary-reference" className={styles.recommendationGroupTarget} />
+            <span id="elementary-expand" className={styles.recommendationGroupTarget} />
+
+            <article id="who-was" className={`${styles.bookRecommendation} ${styles.elementaryExpand}`}>
               <h3>Who Was?</h3>
               <p className={styles.bookAuthor}>By many authors</p>
               <div className={styles.bookReview}>
@@ -169,7 +154,7 @@ export default function BookRecommendationsPage() {
               </div>
             </article>
 
-            <article id="kid-legends" className={styles.bookRecommendation}>
+            <article id="kid-legends" className={`${styles.bookRecommendation} ${styles.elementaryExpand}`}>
               <h3>Kid Legends</h3>
               <p className={styles.bookAuthor}>By many authors</p>
               <div className={styles.bookReview}>
@@ -214,7 +199,7 @@ export default function BookRecommendationsPage() {
               </div>
             </article>
 
-            <article id="percy-jackson" className={styles.bookRecommendation}>
+            <article id="percy-jackson" className={`${styles.bookRecommendation} ${styles.elementaryStories}`}>
               <h3>Percy Jackson and the Olympians</h3>
               <p className={styles.bookAuthor}>By Rick Riordan</p>
               <div className={styles.bookReview}>
@@ -313,7 +298,7 @@ export default function BookRecommendationsPage() {
               </div>
             </article>
 
-            <article id="little-monsters" className={styles.bookRecommendation}>
+            <article id="little-monsters" className={`${styles.bookRecommendation} ${styles.elementaryExpand}`}>
               <h3>Little Monsters: The Creatures that Live on Us and In Us</h3>
               <p className={styles.bookAuthor}>By Albert Marrin</p>
               <div className={styles.bookWithCover}>
@@ -353,7 +338,7 @@ export default function BookRecommendationsPage() {
               </div>
             </article>
 
-            <article id="geronimo-stilton" className={styles.bookRecommendation}>
+            <article id="geronimo-stilton" className={`${styles.bookRecommendation} ${styles.elementaryStories}`}>
               <h3>Geronimo Stilton: Journey Through Time</h3>
               <p className={styles.bookAuthor}>By Elisabetta Dami</p>
               <div className={styles.bookWithCover}>
@@ -381,7 +366,7 @@ export default function BookRecommendationsPage() {
               </div>
             </article>
 
-            <article id="rebel-girls" className={styles.bookRecommendation}>
+            <article id="rebel-girls" className={`${styles.bookRecommendation} ${styles.elementaryExpand}`}>
               <h3>Goodnight Stories for Rebel Girls</h3>
               <p className={styles.bookAuthor}>By many authors</p>
               <div className={styles.bookWithCover}>
@@ -428,7 +413,7 @@ export default function BookRecommendationsPage() {
               </div>
             </article>
 
-            <article id="travel-book" className={styles.bookRecommendation}>
+            <article id="travel-book" className={`${styles.bookRecommendation} ${styles.elementaryReference}`}>
               <h3>The Travel Book</h3>
               <p className={styles.bookAuthor}>By Lonely Planet Kids</p>
               <div className={styles.bookWithCover}>
@@ -460,7 +445,7 @@ export default function BookRecommendationsPage() {
               </div>
             </article>
 
-            <article id="childs-introduction" className={styles.bookRecommendation}>
+            <article id="childs-introduction" className={`${styles.bookRecommendation} ${styles.elementaryReference}`}>
               <h3>A Child&rsquo;s Introduction…</h3>
               <p className={styles.bookAuthor}>By multiple authors</p>
               <div className={styles.bookReview}>
@@ -529,7 +514,7 @@ export default function BookRecommendationsPage() {
               </div>
             </article>
 
-            <article id="long-walk-to-water" className={styles.bookRecommendation}>
+            <article id="long-walk-to-water" className={`${styles.bookRecommendation} ${styles.elementaryStories}`}>
               <h3>A Long Walk to Water</h3>
               <p className={styles.bookAuthor}>By Linda Sue Park</p>
               <div className={styles.bookWithCover}>
@@ -558,7 +543,7 @@ export default function BookRecommendationsPage() {
               </div>
             </article>
 
-            <article id="food-fight" className={styles.bookRecommendation}>
+            <article id="food-fight" className={`${styles.bookRecommendation} ${styles.elementaryReference}`}>
               <h3>Food Fight!</h3>
               <p className={styles.bookAuthor}>By Tanya Steel</p>
               <div className={styles.bookWithCover}>

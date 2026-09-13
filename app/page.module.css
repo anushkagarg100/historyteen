@@ -876,6 +876,18 @@
   display: block;
 }
 
+.recommendationGroupTarget {
+  display: block;
+  height: 0;
+  scroll-margin-top: 112px;
+}
+
+:global(#elementary-stories):target ~ .elementaryStories,
+:global(#elementary-reference):target ~ .elementaryReference,
+:global(#elementary-expand):target ~ .elementaryExpand {
+  display: block;
+}
+
 .bookRecommendation {
   margin-top: 48px;
   max-width: 68ch;
