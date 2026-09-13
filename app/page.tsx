@@ -114,7 +114,7 @@ export default function Home() {
             </ol>
 
             <p className={styles.homeSignoff}>
-              Enjoy! Learn more about <Link href="/about">Our mission</Link> if
+              Enjoy! Learn more about <Link href="/about">our mission</Link> if
               you are interested.
             </p>
           </div>
