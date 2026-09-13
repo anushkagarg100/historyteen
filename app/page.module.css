@@ -827,7 +827,7 @@
   position: absolute;
   top: clamp(54px, 7vw, 88px);
   right: clamp(18px, 3vw, 44px);
-  width: clamp(130px, 14vw, 190px);
+  width: clamp(175px, 19vw, 265px);
   transform: rotate(-90deg);
   transform-origin: center;
 }
@@ -1111,7 +1111,7 @@
   .bookPageCue {
     top: 36px;
     right: 8px;
-    width: 110px;
+    width: 145px;
   }
 
   .favoriteBooks,
