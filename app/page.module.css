@@ -196,8 +196,8 @@
 
 .hero {
   position: relative;
-  padding-top: 88px;
-  padding-bottom: 48px;
+  padding-top: 64px;
+  padding-bottom: 36px;
 }
 
 .comingSoonBody {
@@ -206,8 +206,8 @@
 
 .heroStage {
   position: relative;
-  min-height: 590px;
-  margin-top: 42px;
+  min-height: 560px;
+  margin-top: 12px;
   overflow: hidden;
   background:
     radial-gradient(circle at 13% 72%, var(--gold) 0 8%, transparent 8.2%),
@@ -251,18 +251,18 @@
   text-transform: uppercase;
 }
 
-.portraitAda { left: 1%; bottom: 32px; width: 190px; height: 265px; transform: rotate(-6deg); }
-.portraitWashington { left: 16%; bottom: -22px; width: 235px; height: 330px; transform: rotate(3deg); }
-.portraitHarriet { left: 50%; bottom: -32px; width: 250px; height: 350px; transform: translateX(-50%) rotate(-1deg); z-index: 3; }
-.portraitMarie { right: 16%; bottom: -18px; width: 215px; height: 305px; transform: rotate(-3deg); z-index: 2; }
-.portraitFrederick { right: 1%; bottom: 38px; width: 190px; height: 260px; transform: rotate(6deg); }
+.portraitAda { left: -2%; bottom: 24px; width: 220px; height: 305px; transform: rotate(-6deg); }
+.portraitWashington { left: 14%; bottom: -26px; width: 265px; height: 370px; transform: rotate(3deg); }
+.portraitHarriet { left: 50%; bottom: -36px; width: 285px; height: 400px; transform: translateX(-50%) rotate(-1deg); z-index: 3; }
+.portraitMarie { right: 14%; bottom: -22px; width: 245px; height: 345px; transform: rotate(-3deg); z-index: 2; }
+.portraitFrederick { right: -2%; bottom: 28px; width: 220px; height: 300px; transform: rotate(6deg); }
 
 .heroHeadline {
   position: relative;
-  z-index: 2;
-  max-width: 780px;
+  z-index: 4;
+  max-width: 860px;
   margin: 0 auto;
-  padding-top: clamp(54px, 8vw, 92px);
+  padding-top: clamp(30px, 5vw, 52px);
   text-align: center;
 }
 
@@ -287,9 +287,9 @@
 }
 
 .hero h1 {
-  margin-top: 22px;
+  margin-top: 0;
   font-family: var(--font-serif-display), Georgia, serif;
-  font-size: clamp(44px, 7vw, 76px);
+  font-size: clamp(52px, 8vw, 88px);
   font-weight: 600;
   line-height: 1.02;
   letter-spacing: -0.055em;
@@ -1296,8 +1296,8 @@
 
 @media (max-width: 600px) {
   .hero {
-    padding-top: 56px;
-    padding-bottom: 40px;
+    padding-top: 54px;
+    padding-bottom: 32px;
   }
 
   .hero > .siteSearch {
@@ -1307,8 +1307,8 @@
   }
 
   .heroStage {
-    min-height: 510px;
-    margin-top: 30px;
+    min-height: 470px;
+    margin-top: 8px;
   }
 
   .heroPortrait { border-width: 4px; }
@@ -1320,7 +1320,7 @@
   .portraitFrederick { right: -8%; bottom: 76px; width: 30vw; height: 41vw; }
 
   .heroHeadline {
-    padding-top: 52px;
+    padding-top: 34px;
   }
 
   .sectionBody {

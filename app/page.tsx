@@ -42,9 +42,6 @@ export default function Home() {
                 </figure>
               </div>
               <div className={styles.heroHeadline}>
-                <p className={styles.eyebrow}>
-                  Established 2026 &middot; Issue No. 1 in preparation
-                </p>
                 <h1>History doesn&rsquo;t have to be boring.</h1>
               </div>
             </div>
