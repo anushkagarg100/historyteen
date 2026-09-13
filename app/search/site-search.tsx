@@ -54,13 +54,23 @@ export default function SiteSearch() {
   return (
     <div className={styles.siteSearch}>
       <label htmlFor="site-search">Search HistoryTeen</label>
-      <input
-        id="site-search"
-        type="search"
-        value={query}
-        placeholder="Try “books” or “competitions”"
-        onChange={(event) => setQuery(event.target.value)}
-      />
+      <div className={styles.searchField}>
+        <input
+          id="site-search"
+          type="search"
+          value={query}
+          placeholder="Search"
+          onChange={(event) => setQuery(event.target.value)}
+        />
+        <svg
+          className={styles.searchIcon}
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m15.5 15.5 5 5" />
+        </svg>
+      </div>
       {normalizedQuery && (
         <>
           <p className={styles.searchCount} aria-live="polite">
