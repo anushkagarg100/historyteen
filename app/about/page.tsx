@@ -23,81 +23,37 @@ export default function AboutPage() {
           </p>
 
           <div className={styles.missionStory}>
-            <p className={styles.missionIntro}>
-              Hi! My name is Anushka Garg, and I am a student at Eastlake High
-              School. A little bit about me:
-            </p>
             <div className={styles.missionProse}>
               <p>
-                Since elementary school, I have been a history enthusiast. But
-                my passion was a bit offbeat—and because I didn&rsquo;t enjoy
-                math or science, I struggled to find something that would match
-                my interests.
+                Since elementary school, I have been a history enthusiast.
+                Nothing gave me more joy than flipping through thick
+                encyclopedias (a favorite was a well worn copy of Picturepedia)
+                and watching Brainpop videos, each fact giving me more insight
+                into the world and our social heritage.
               </p>
               <p>
-                After lots of agonizing and researching, I found history
-                competitions that I could take part in. They gave me so much
-                confidence, a community to be part of, and a clear career path
-                forward in the humanities. Not only that, but I learned so much
-                about history itself—a fascinating subject that is arguably
-                slept on.
+                But where to go with this interest? After lots of research, I
+                found history contests I could be a part of. They gave me so
+                much confidence, a community to be part of, and a clear career
+                path forward in the humanities. Not only that, but I learned so
+                much about history itself—a fascinating subject that is
+                arguably slept on.
               </p>
               <p>
-                After competing for three years, I find that a lot of kids are
-                facing similar issues to those I encountered in elementary
-                school. They&rsquo;re not interested in more traditional
-                competitions, but they still want to be involved in something.
-                Or they like history, but they don&rsquo;t know what to do with
-                that interest.
-              </p>
-            </div>
-          </div>
-
-          <div className={styles.myths}>
-            <p className={styles.kicker}>Never fear—HistoryTeen is here</p>
-            <h3>Two myths we&rsquo;re here to debunk</h3>
-            <ol className={styles.mythList}>
-              <li>
-                <span className={styles.principleNum}>01</span>
-                <p>
-                  &ldquo;History is boring, old-fashioned, and completely
-                  irrelevant.&rdquo;
-                </p>
-              </li>
-              <li>
-                <span className={styles.principleNum}>02</span>
-                <p>&ldquo;What will I do with history? Nothing.&rdquo;</p>
-              </li>
-            </ol>
-          </div>
-
-          <div className={styles.missionStory}>
-            <p className={styles.missionIntro}>The truth about history</p>
-            <div className={styles.missionProse}>
-              <p>
-                The truth is, history is an incredibly versatile field, with new
-                discoveries being made all the time; and contrary to the first
-                myth, it is not irrelevant or boring. In fact, the more you
-                study it, the more you gain a new way of seeing the world.
-                Don&rsquo;t believe me? There are many different books you can
-                look at on our website to learn more about history, as well as
-                quizzes and articles.
+                Now, as a high school student, I want to give other
+                history-obsessed kids a place they can channel their interest, a
+                place I wish I had when I was starting out. Are you interested
+                in the subject but don&rsquo;t know how to develop it? Have you
+                just begun competing but are clueless about strategy? Or just
+                looking for something to get into?
               </p>
               <p>
-                Onto the second myth--there are plenty of things you can do with
-                history. In our &ldquo;Competitions&rdquo; list, we have a list
-                of contests and programs you can take part in to stoke your
-                passion. Not only that, but we feature interviews with many
-                different history professionals, who have gone on to make
-                careers out of their budding interest.
+                It&rsquo;s all here. Resources of every kind, to get YOU in the
+                history zone.
               </p>
               <p>
-                My main objective is to support you wherever you are and create
-                the space I wish I had when I was just starting out.
-              </p>
-              <p>
-                To paraphrase Laozi, &ldquo;A history journey of a thousand miles
-                begins with History Teen.&rdquo;
+                To paraphrase Laozi, &ldquo;A history journey of a thousand
+                miles begins with History Teen.&rdquo;
               </p>
               <p className={styles.missionSignoff}>Happy learning!!</p>
             </div>
